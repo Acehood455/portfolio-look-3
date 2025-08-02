@@ -112,11 +112,11 @@ section {
     @apply md:top-10 top-0 bg-transparent;
   }
 
-  .navbar-inner {
+  .navbar .inner {
     @apply mx-auto flex items-center justify-between;
   }
 
-  .navbar-logo {
+  .navbar .logo {
     @apply text-white50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
   }
 
@@ -136,20 +136,16 @@ section {
     @apply transition-colors duration-300 hover:text-white;
   }
 
-  .desktop-nav .underline {
-    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
+  .underline {
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-500 group-hover:w-full;
   }
 
   .contact-btn {
     @apply flex;
   }
 
-  .contact-btn-inner {
-    @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black50 transition-colors duration-300;
-  }
-
-  .contact-btn-inner span {
-    @apply group-hover:text-white transition-colors duration-300;
+  .contact-btn-span {
+    @apply group-hover:text-white transition-colors duration-300 px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black50;
   }
 
   .app-showcase {
@@ -164,8 +160,12 @@ section {
     @apply h-full flex flex-col justify-between xl:w-[60%];
   }
 
-  .project-image-wrapper {
+  .first-project-wrapper .image-wrapper {
     @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
+  }
+  
+  .first-project-wrapper .image-wrapper img {
+    @apply w-full h-full object-cover rounded-xl absolute inset-0;
   }
 
   .project-image-wrapper img {
@@ -175,6 +175,15 @@ section {
   .project-text-content {
     @apply space-y-5 mt-5;
   }
+
+  .text-content {
+    @apply space-y-5 mt-5;
+  }
+
+  .text-content h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+      
 
   .project-badges {
     @apply flex gap-2 mb-4;
@@ -186,6 +195,18 @@ section {
 
   .project-list-wrapper {
     @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
+  }
+
+  .project-list-wrapper .image-wrapper {
+    @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
+  }
+
+  .project-list-wrapper img {
+     @apply w-full h-full object-contain rounded-xl;
+  }
+
+  .project-list-wrapper h2 {
+      @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
   }
 
   .project-thumbnail-wrapper {

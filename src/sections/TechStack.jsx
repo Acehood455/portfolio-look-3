@@ -6,7 +6,21 @@ import gsap from 'gsap'
 
 const TechStack = () => {
     useGSAP(() => {
-        gsap
+        gsap.fromTo(".tech-card", {
+            y: 50,
+            opacity: 0
+        }, {
+            y: 0,
+            opacity: 1,
+            stagger: 0.2,
+            duration: 1,
+            ease: "power2.inOut",
+            scrollTrigger: {
+                trigger: "#skills",
+                start: "top center",
+        }
+        }
+    );
     })
     
   return (

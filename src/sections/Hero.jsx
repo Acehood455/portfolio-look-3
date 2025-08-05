@@ -1,6 +1,6 @@
 import AnimatedCounter from "../components/AnimatedCounter"
 import Button from "../components/Button"
-import HeroExperience from "../components/HeroModels/HeroExperience"
+import HeroExperience from "../components/models/hero_models/HeroExperience"
 import { words } from "../constants"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
@@ -30,7 +30,7 @@ const Hero = () => {
                                     {words.map((word) => (
                                         <span key={word.id} className="flex items-center md:gap-3 gap-1 pb-2">
                                             <img 
-                                              src={word.image} 
+                                              src={word.imgPath} 
                                               alt={word.text} 
                                               className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white50" 
                                             />
@@ -61,7 +61,7 @@ const Hero = () => {
             {/* RIGHT: 3D MODEL */}
             <figure>
                 <div className="hero-3d-layout">
-                    {/* <HeroExperience /> */}
+                    <HeroExperience />
                 </div>
             </figure>
         </div>

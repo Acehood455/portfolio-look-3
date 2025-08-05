@@ -18,20 +18,20 @@ const navLinks = [
 ];
 
 const words = [
-  { id: 1, text: "Ideas", image: "/images/ideas.svg" },
-  { id: 2, text: "Concepts", image: "/images/concepts.svg" },
-  { id: 3, text: "Designs", image: "/images/designs.svg" },
-  { id: 4, text: "Code", image: "/images/code.svg" },
-  { id: 5, text: "Ideas", image: "/images/ideas.svg" },
-  { id: 6, text: "Concepts", image: "/images/concepts.svg" },
-  { id: 7, text: "Designs", image: "/images/designs.svg" },
-  { id: 8, text: "Code", image: "/images/code.svg" },
+  { text: "Ideas", imgPath: "/images/ideas.svg" },
+  { text: "Concepts", imgPath: "/images/concepts.svg" },
+  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ideas", imgPath: "/images/ideas.svg" },
+  { text: "Concepts", imgPath: "/images/concepts.svg" },
+  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Code", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
-  { value: 1, suffix: "+", label: "Years of Experience" },
-  { value: 5, suffix: "+", label: "Satisfied Clients" },
-  { value: 8, suffix: "+", label: "Completed Projects" },
+  { value: 15, suffix: "+", label: "Years of Experience" },
+  { value: 200, suffix: "+", label: "Satisfied Clients" },
+  { value: 108, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -218,28 +218,28 @@ const testimonials = [
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Ace was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ace's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ace is the ideal partner.",
     imgPath: "/images/client2.png",
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Ace was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Ace’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
     imgPath: "/images/client4.png",
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Ace was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
     imgPath: "/images/client6.png",
   },
 ];
@@ -248,18 +248,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://instagram.com",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    link: "https://facebook.com",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    link: "https://twitter.com",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://linkedin.com",
   },
 ];
 

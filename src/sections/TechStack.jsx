@@ -47,7 +47,7 @@ const TechStack = () => {
               The key is set to the name of the tech stack icon, and the classnames are set to 
               card-border, tech-card, overflow-hidden, and group. The xl:rounded-full and rounded-lg 
               classes are only applied on larger screens. */}
-          {techStackIcons.map((techStackIcon) => (
+{/*           {techStackIcons.map((techStackIcon) => (
             <div
               key={techStackIcon.name}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
@@ -66,10 +66,10 @@ const TechStack = () => {
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
 
           {/* Normal Static Image */}
-          {/* {techStackImgs.map((techStackIcon, index) => (
+          {techStackImgs.map((techStackIcon, index) => (
             <div
               key={index}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
@@ -84,7 +84,7 @@ const TechStack = () => {
                 </div>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
